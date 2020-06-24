@@ -10,12 +10,16 @@
       margin: 0;
       height: 100vh;
       background-color: #000;
+      display:flex;
+    }
+    #canvas{
+      margin:auto;
     }
   </style>
 </head>
 
 <body>
-  <canvas id="canvas" width="700px" height="700px"></canvas>
+  <canvas id="canvas" width="500px" height="500px"></canvas>
 </body>
 <script>
   var canvas = document.getElementById("canvas");
@@ -28,7 +32,7 @@
   Clock();
   function Clock() {
     ctx.fillStyle = "#000";
-    ctx.fillRect(0, 0, 700, 700);
+    ctx.fillRect(0, 0, 500, 500);
 
     var now = new Date();
     var today = now.toDateString();
